@@ -7,13 +7,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "fork",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
     "cli-color": "^2.0.1",
-    "readline-async": "^0.1.0",
     "readline-sync": "^1.4.10",
     "wordlist-english": "^1.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forczy/Wordle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Forczy/Wordle/issues"
+  },
+  "homepage": "https://github.com/Forczy/Wordle#readme"
 }
