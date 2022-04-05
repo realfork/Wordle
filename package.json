@@ -17,10 +17,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Forczy/Wordle.git"
+    "url": "git+https://github.com/ForkPrivate/Wordle.git"
   },
   "bugs": {
-    "url": "https://github.com/Forczy/Wordle/issues"
+    "url": "https://github.com/ForkPrivate/Wordle/issues"
   },
-  "homepage": "https://github.com/Forczy/Wordle#readme"
+  "homepage": "https://github.com/ForkPrivate/Wordle#readme"
 }
