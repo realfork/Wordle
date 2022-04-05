@@ -3,7 +3,7 @@ import * as rl from "readline-sync"
 import clc from "cli-color"
 import wordlist from "wordlist-english"
 
-const word = words[Math.floor(Math.random() * words.length)].split("")
+const word = words[Math.floor(Math.random() * words.length)].toLowerCase().split("")
 
 for (let i = 1; i < 7;) {
     let input = rl.question((i == 1 ? clc.green("Wordle") : "") + clc.yellow(" > ")).toLowerCase()
@@ -15,9 +15,9 @@ for (let i = 1; i < 7;) {
         i--
     } else input.split("").forEach((letter, index) => {
         if (index == 0) letter = letter.toUpperCase()
-        if (word.includes(letter)) {
+        if (word.includes(letter.toLowerCase())) {
             if (letter.toLowerCase() == word[index]) process.stdout.write(clc.green(letter))
-            else if (word.filter(l => l == letter).length <= input.split("").filter(l => l == letter).length) process.stdout.write(clc.yellow(letter))
+            else if (word.filter(l => l == letter.toLowerCase()).length <= input.split("").filter(l => l == letter.toLowerCase()).length) process.stdout.write(clc.yellow(letter))
             else process.stdout.write(letter)
         }
         else process.stdout.write(letter)
